@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Escritório de advocacia especializado em direito civil, empresarial e trabalhista. Experiência, dedicação e resultados para você.">
+    <meta name="keywords" content="advocacia, advogado, direito, jurídico, consultoria jurídica">
+    <meta property="og:title" content="Andrade Gomes - Advocacia de Excelência">
+    <meta property="og:description" content="Escritório de advocacia com mais de 20 anos de experiência">
+    <meta property="og:type" content="website">
+
+    <title>Andrade Gomes - Advocacia de Excelência</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="assets/logo.png" class="logo-img" alt="Logo Andrade Gomes">
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">ANDRADE GOMES</span>
+                    <span class="logo-subtext">ADVOCACIA</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#areas" class="nav-link">Áreas de Atuação</a></li>
+                <li><a href="#team" class="nav-link">Equipe</a></li>
+                <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+                <li><a href="#contact" class="cta-button">Contato</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Advocacia de Excelência</h1>
+            <p class="hero-subtitle"> Anos de experiência defendendo seus interesses com dedicação e
+                profissionalismo.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    Agende uma Consulta
+                </button>
+                <button class="btn-secondary"
+                    onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                    Dr. Rubens E. A. Gomes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"> Dr. Rubens Eduardo Andrade Gomes</h2>
+                <p class="section-subtitle">Compromisso com a excelência jurídica</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text slide-in-left">
+                    <p>
+                        Andrade Gomes Advocacia nasce com a proposta de entregar soluções jurídicas eficientes,
+                        estratégicas e alinhadas às necessidades reais de cada cliente. Desde 2022, o escritório
+                        atua de forma independente, reunindo amplo know-how em áreas essenciais do Direito, como
+                        trabalhista, cível, consumidor, família, contratos e demais demandas que exigem agilidade
+                        e dedicação.
+                    </p>
+                    <p>
+                        A prioridade é clara: proporcionar segurança jurídica, clareza e respostas rápidas
+                        — sempre com ética, transparência e um acompanhamento próximo, pensado para quem busca
+                        não apenas um advogado, mas um parceiro na resolução de problemas e na construção
+                        de soluções jurídicas eficazes.
+                    </p>
+                </div>
+
+                <div class="about-stats slide-in-right">
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Casos Vencidos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfação dos Clientes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">01</div>
+                        <div class="stat-label">Advogados Especializados</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas Section -->
+    <section class="practice-areas" id="areas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Áreas de Atuação</h2>
+                <p class="section-subtitle">Soluções jurídicas completas para suas necessidades</p>
+            </div>
+
+            <div class="areas-grid">
+                <div class="area-card slide-in-up">
+                    <div class="area-icon">👔</div>
+                    <h3>Direito Empresarial</h3>
+                    <p>Consultoria jurídica completa para empresas, incluindo contratos, fusões, aquisições e
+                        compliance.</p>
+                </div>
+
+                <div class="area-card slide-in-up">
+                    <div class="area-icon">🏠</div>
+                    <h3>Direito Civil</h3>
+                    <p>Assessoria em contratos, responsabilidade civil, direito de família e sucessões.</p>
+                </div>
+
+                <div class="area-card slide-in-up">
+                    <div class="area-icon">💼</div>
+                    <h3>Direito Trabalhista</h3>
+                    <p>Defesa de direitos trabalhistas, ações judiciais e consultoria preventiva para empresas e
+                        empregados.</p>
+                </div>
+
+                <div class="area-card slide-in-up">
+                    <div class="area-icon">🏛️</div>
+                    <h3>Direito Tributário</h3>
+                    <p>Planejamento tributário, recuperação de créditos e defesa em processos administrativos e
+                        judiciais.</p>
+                </div>
+
+                <div class="area-card slide-in-up">
+                    <div class="area-icon">🛡️</div>
+                    <h3>Direito do Consumidor</h3>
+                    <p>Proteção dos direitos do consumidor em relações de consumo e ações contra fornecedores.</p>
+                </div>
+
+                <div class="area-card slide-in-up">
+                    <div class="area-icon">⚖️</div>
+                    <h3>Direito Imobiliário</h3>
+                    <p>Assessoria em compra, venda, locação e regularização de imóveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Advogado Responsável</h2>
+                <p class="section-subtitle">Profissional qualificado à sua disposição</p>
+            </div>
+
+            <div class="team-grid" style="display: flex; justify-content: center;">
+                <div class="team-member slide-in-up" style="max-width: 400px; width: 100%;">
+                    <div class="member-image" id="teamMember1"
+                        style="background: linear-gradient(135deg, #0a1628, #2c5282); display: flex; align-items: center; justify-content: center; color: #d4af37; font-size: 4rem; font-weight: bold;">
+                        R.E.A.G</div>
+                    <div class="member-info">
+                        <h3 class="member-name">Dr. Rubens Eduardo Andrade Gomes</h3>
+                        <p class="member-role">Advogado | OAB/PR 112.623</p>
+                        <p class="member-bio">Especialista em Advocacia Cível <br>
+                            Soluções jurídicas estratégicas <br>
+                            e personalizadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Depoimentos</h2>
+                <p class="section-subtitle">O que nossos clientes dizem sobre nós</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card slide-in-up">
+                    <p class="testimonial-text">
+                        "Excelente atendimento! o Dr. Rubens foi fundamental para resolver
+                        meu caso de forma rápida e eficiente. Recomendo muito!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div>
+                            <div class="author-name">Josiane Siqueira</div>
+                            <div class="author-title">Professora</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card slide-in-up">
+                    <p class="testimonial-text">
+                        "Profissional extremamente competente e atencioso. Conseguiu um resultado
+                        excelente no meu processo. Gratidão!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div>
+                            <div class="author-name">Josiane Siqueira</div>
+                            <div class="author-title">Professora</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card slide-in-up">
+                    <p class="testimonial-text">
+                        "A consultoria jurídica prestada foi essencial para o crescimento da minha empresa.
+                        Dr. Rubens foi dedicado e sempre disponível."
+                    </p>
+                    <div class="testimonial-author">
+                        <div>
+                            <div class="author-name">Josiane Siqueira</div>
+                            <div class="author-title">Professora</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Estamos prontos para ajudar você</p>
+            </div>
+
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Descreva brevemente seu caso..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item slide-in-right">
+                        <div class="info-icon">📍</div>
+                        <div class="info-text">
+                            <h4>Endereço</h4>
+                            <p>Av. Anita Garibaldi, 2691<br>Ponta Grossa, PR - CEP 84015-050</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item slide-in-right">
+                        <div class="info-icon">📞</div>
+                        <div class="info-text">
+                            <h4>Telefone</h4>
+                            <p>(42) 99911-9127<br></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item slide-in-right">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-text">
+                            <h4>E-mail</h4>
+                            <p>rubens_eduardo@outlook.com.br<br></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item slide-in-right">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-text">
+                            <h4>Horário de Atendimento</h4>
+                            <p>COM HORA MARCADA<br> DE SEG A SEX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 ANDRADE GOMES - Advocacia. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Política de Privacidade</a>
+                <a href="#" class="footer-link">Termos de Uso</a>
+                <a href="#" class="footer-link">Código de Ética</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
