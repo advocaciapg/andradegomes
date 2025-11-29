@@ -1323,11 +1323,11 @@ section {
 * ============================================
     BOTÃO FLUTUANTE WHATSAPP
     ============================================ */
+/* Botão WhatsApp */
 .floating-whatsapp {
-    position: fixed !important;  /* garante que fique fixo */
-    bottom: 30px !important;
-    right: 30px !important;
-    z-index: 9999 !important;    /* acima de tudo */
+    position: fixed !important;
+    bottom: 30px;
+    right: 30px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -1338,6 +1338,7 @@ section {
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     text-decoration: none;
     transition: transform 0.3s;
+    z-index: 1001;  /* > 1000, fica acima do back-to-top */
 }
 
 .floating-whatsapp:hover {
@@ -1345,26 +1346,50 @@ section {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
 }
 
-.floating-whatsapp .whats-icon {
+.floating-whatsapp svg {
     width: 32px;
     height: 32px;
-    fill: white !important;  /* força a cor no PC */
+    fill: white !important;
 }
 
-/* Responsividade mobile */
+/* Botão Back-to-Top */
+.back-to-top {
+    position: fixed !important;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;  /* menor que WhatsApp */
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+/* Ajustes mobile */
 @media (max-width: 768px) {
     .floating-whatsapp {
-        bottom: 20px !important;
-        right: 15px !important;
+        bottom: 90px;  /* sobe para não ficar embaixo do back-to-top */
+        right: 20px;
         width: 50px;
         height: 50px;
     }
-    .floating-whatsapp .whats-icon {
+    .floating-whatsapp svg {
         width: 26px;
         height: 26px;
     }
+
+    .back-to-top {
+        bottom: 20px;  /* fica abaixo do WhatsApp */
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
 }
-
-
-
-
