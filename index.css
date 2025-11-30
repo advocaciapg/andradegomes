@@ -1393,48 +1393,18 @@ section {
         height: 45px;
     }
 }
-/* ===============================
-   CORREÇÃO DESKTOP (LARGURA 1200px)
-   =============================== */
-
+/* === CORRIGIR LARGURA DAS SEÇÕES APENAS NO PC === */
 @media (min-width: 1024px) {
-
-    /* Container centralizador para o desktop */
-    .container-desktop,
     section,
-    .areas-grid,
-    .service-grid,
-    .team-grid,
-    .testimonials-grid,
-    .contact-grid {
+    .section,
+    .container,
+    .content,
+    .cards,
+    .testimonials,
+    .contact-container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        box-sizing: border-box;
-    }
-
-    /* ÁREAS DE ATUAÇÃO – 3 colunas no desktop */
-    .areas-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    /* DEPOIMENTOS – 2 colunas no desktop */
-    .testimonials-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* CONTATO – 2 colunas no desktop */
-    .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Equilibra melhor o tamanho dos cards no PC */
-    .area-card,
-    .service-card,
-    .testimonial,
-    .contact-item {
-        max-width: 100%;
     }
 }
+
